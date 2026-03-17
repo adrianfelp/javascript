@@ -16,9 +16,12 @@
     <h1>Iniciando estudos com DOM</h1>    
     <p>Aqui vai o resultado div</p>
     <p>Aprendendo usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-
+        var p1 = window.document.getElementsByTagName('p')[0] // usando colchete
+        var d = window.document.getElementById('msg') // Se não for singular não precisa usar colchete
+        d.style.background = 'black'
+        d.innerText = 'Estou aguardando...'   // Definir o conteúdo de texto de um elemento
     </script>
 </body>
 </html>
